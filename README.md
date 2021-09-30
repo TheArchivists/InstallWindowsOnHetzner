@@ -12,11 +12,12 @@ List of methods
 
 I will take time and cover all 3 methods. 
 
-Some stuff you need to know before you proceed because I wont re-re explain these 
-Robot = hetzner web panel to manage servers
-Rescue system = Is available under robot > servers > click on server you have > rescue (usually third option from the left)
-KVM = A KVM switch is a hardware device that allows a user to control computers from one or more sets of keyboards, video monitors, and mice. Basically with kvm you can access the server straight from the BIOS, like you were actually there. For the nub nubs -  It's a bios level RDP to speak.
-VNC viewer - Get the one for YOUR computer (not for your server) [from here](https://www.realvnc.com/en/connect/download/viewer/)
+Some stuff you need to know before you proceed because I wont re-re explain these:<br>
+<br>
+**Robot** = hetzner web panel to manage servers<br>
+**Rescue system** = Is available under robot > servers > click on server you have > rescue (usually third option from the left)<br>
+**KVM** = A KVM switch is a hardware device that allows a user to control computers from one or more sets of keyboards, video monitors, and mice. Basically with kvm you can access the server straight from the BIOS, like you were actually there. For the nub nubs -  It's a bios level RDP to speak.<br>
+**VNC viewer** = Get one for YOUR computer (not for your server) [from here](https://www.realvnc.com/en/connect/download/viewer/)<br>
 
 Here goes 
 
@@ -25,17 +26,17 @@ Installing Windows server image on hetzner using Rescue system and KVM
 
 - Go to [this site](https://robot.your-server.de/server)
 - Click server and from the list of servers if you have, click on your server 
-- Click "rescue" and you will see this
+- Click *rescue* and you will see this
 
 ![img1](https://i.imgur.com/Riqz6Nc.png)
 
-- From here click "activate rescue system" 
+- From here click *activate rescue system*
 - Now the page will give you ssh logins to rescue system, copy these somewhere safe we will need them later 
-- Now go to "reset" section which is just to the left of "rescue" tab 
+- Now go to *reset* section which is just to the left of *rescue* tab 
 
 ![img2](https://i.imgur.com/02uYdZY.png)
 
-- Click "order an automatic hardware reset" - and then click send, this is like hard rebooting your server
+- Click *order an automatic hardware reset* - and then click send, this is like hard rebooting your server
 - Now, when the server reboots it will reboot once into the rescue system mode
 
 How will you know its up?
@@ -51,7 +52,7 @@ Let's get to real work from this point
 `wget -qO- /tmp https://github.com/AnimeKaizoku/InstallWindowsOnHetzner/raw/main/uefi.tar.gz | tar -xvz -C /tmp`
 
 - Okay, we are setup on our emulator, lets download a windows ISO and what better place than hetzner itself? 
-Hetzner has 2 types of mirrors - Internal and external, the internal one is accessible without login from "inside the hetzner network" and external one is public. 
+Hetzner has 2 types of mirrors - Internal and external, the internal one is accessible without login from *inside the hetzner network* and external one is public. 
 We will use the external one to see the path of the image we want and use the internal url (they both have same structure)
 
 Visit [this site](http://download.hetzner.com/bootimages/)
@@ -104,7 +105,7 @@ Example: 192.168.0.1:1
 
 
 Now hit enter on the ssh, then hit connect on the VNC viewer
-Hit connect, vnc will connect you to an rdp session where you will load the OS - in some cases, because its loading the OS like its from a pendrive you might get a "press and key to boot from disk/cd" so if you run the ssh command first you might miss this prompt and the ISO might not boot. 
+Hit connect, vnc will connect you to an rdp session where you will load the OS - in some cases, because its loading the OS like its from a pendrive you might get a *press and key to boot from disk/cd* so if you run the ssh command first you might miss this prompt and the ISO might not boot. 
 This is why i said to prepare VNC first. 
 
 From here its just a normal windows install, do that yada yada, install the os
