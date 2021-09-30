@@ -115,6 +115,3 @@ Go to my computer properties once your server is up > advanced system settings >
 
 Save, then click reboot and then try to connect. 
 Done
-
-This post needs revision, its just a rough rough draft and i need to revise a lot of shit, will do 
-If anyone wants to help me beautify this, please open a PR - thank you. 
