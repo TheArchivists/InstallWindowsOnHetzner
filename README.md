@@ -55,9 +55,9 @@ Hetzner has 2 types of mirrors - Internal and external, the internal one is acce
 We will use the external one to see the path of the image we want and use the internal url (they both have same structure)
 
 Visit [this site](http://download.hetzner.com/bootimages/)
-The logins are
-Username: hetzner
-Password: download 
+The logins are<br>
+Username: `hetzner`<br>
+Password: `download`<br>
 
 To save you the time I have the external url's here 
 
