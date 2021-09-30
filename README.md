@@ -111,6 +111,7 @@ From here its just a normal windows install, do that yada yada, install the os
 Login to the server 
 
 Go to my computer properties once your server is up > advanced system settings > remote > and tick the following 
+
 ![img3](https://i.imgur.com/BdmEbaL.png)
 
 Save, then click reboot and then try to connect. 
