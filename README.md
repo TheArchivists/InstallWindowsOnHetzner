@@ -55,7 +55,7 @@ Let's get to real work from this point
 Hetzner has 2 types of mirrors - Internal and external, the internal one is accessible without login from *inside the hetzner network* and external one is public. 
 We will use the external one to see the path of the image we want and use the internal url (they both have same structure)
 
-Visit [this site](http://download.hetzner.com/bootimages/)
+Visit [this site](http://download.hetzner.com/bootimages/)<br>
 The logins are<br>
 Username: `hetzner`<br>
 Password: `download`<br>
@@ -100,7 +100,7 @@ Once that is ready and before you hit enter on that ssh command lets open VNC vi
 Put the IP of the server in the connection field like this
 yourIP:1
 
-Where yourIP is ofc your server IP 
+Where yourIP is ofc your server IP<br>
 Example: 192.168.0.1:1
 
 
