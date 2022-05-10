@@ -78,7 +78,7 @@ Now that's the URL that our server can access anytime without any logins needed.
 Now close your eyes and run these commands in serial order<br>
 ```
 cd /tmp
-wget http://mirror.hetzner.de/bootimages/windows/SW_DVD9_Win_Server_STD_CORE_2019_1809.11_64Bit_English_DC_STD_MLF_X22-51041.ISO
+wget http://mirror.hetzner.de/bootimages/windows/SW_DVD9_Win_Server_STD_CORE_2022__64Bit_English_DC_STD_MLF_X22-74290.ISO
 cd /
 ```
 
@@ -87,12 +87,12 @@ cd /
 
 For servers with no 2TB+ HDD
 ```
-/tmp/qemu-system-x86_64 -net nic -net user,hostfwd=tcp::3389-:3389 -m 2048M -localtime -enable-kvm -cpu host,+nx -M pc -smp 2 -vga std -usbdevice tablet -k en-us -cdrom /tmp/SW_DVD9_Win_Server_STD_CORE_2019_1809.11_64Bit_English_DC_STD_MLF_X22-51041.ISO -hda /dev/sda -boot once=d -vnc :1
+/tmp/qemu-system-x86_64 -net nic -net user,hostfwd=tcp::3389-:3389 -m 2048M -localtime -enable-kvm -cpu host,+nx -M pc -smp 2 -vga std -usbdevice tablet -k en-us -cdrom /tmp/SSW_DVD9_Win_Server_STD_CORE_2022__64Bit_English_DC_STD_MLF_X22-74290.ISO -hda /dev/sda -boot once=d -vnc :1
 ```
 
 For servers with a 2TB+ HDD and UEFI
 ```
-/tmp/qemu-system-x86_64 -bios /tmp/uefi.bin -net nic -net user,hostfwd=tcp::3389-:3389 -m 2048M -localtime -enable-kvm -cpu host,+nx -M pc -smp 2 -vga std -usbdevice tablet -k en-us -cdrom /tmp/SW_DVD9_Win_Server_STD_CORE_2019_1809.11_64Bit_English_DC_STD_MLF_X22-51041.ISO -hda /dev/sda -boot once=d -vnc :1
+/tmp/qemu-system-x86_64 -bios /tmp/uefi.bin -net nic -net user,hostfwd=tcp::3389-:3389 -m 2048M -localtime -enable-kvm -cpu host,+nx -M pc -smp 2 -vga std -usbdevice tablet -k en-us -cdrom /tmp/SW_DVD9_Win_Server_STD_CORE_2022__64Bit_English_DC_STD_MLF_X22-74290.ISO -hda /dev/sda -boot once=d -vnc :1
 ```
 
 This is the VNC section
